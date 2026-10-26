@@ -244,7 +244,7 @@ nav ul li:hover a{
 
 /* why me section  */
 .why-me{
-    background-color: rgb(247, 238, 227);
+    background-color: white;
     padding: 40px 50px;
 }
 
@@ -273,4 +273,29 @@ nav ul li:hover a{
     font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+
+
+/* Our Journey section  */
+.journey{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 50px;
+    border-top: 1px solid rgb(219, 218, 218);
+
+}
+
+.journey p{
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.journey h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
