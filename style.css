@@ -1,0 +1,865 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+
+/* aside section  */
+aside{
+    /* width: fit-content; */
+    display: inline-block;
+    border: 1px solid black;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+    display: none;
+}
+
+aside .image{
+    width: 250px;
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    /* display: inline-block; */
+    /* background-color: red; */
+}
+
+aside .image i{
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+aside .image i:hover{
+    font-size: 2.8rem;
+
+}
+
+.slideIn {
+    animation: slideIn 0.5s;
+}
+
+#openbtn{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#openbtn:hover{
+    font-size: 1.5rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+aside img{
+    width: 100%;
+    background-color: green;
+}
+
+aside nav ul li{
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    list-style: none;
+}
+
+aside nav ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+aside nav ul li a:hover{
+    /* transform: scale(1.3); */
+    font-size: 1.5rem;
+
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
+}
+
+header img{
+    width: 15%;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li{
+    list-style: none;
+    transition: 0.5s;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+header .icons{
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+}
+
+nav ul li:hover a{
+    text-decoration: underline;
+    color: rgb(76, 76, 113);
+}
+
+.cart{
+    display: flex;
+}
+
+
+
+/* Hero section  */
+.hero{
+    background-image: linear-gradient(rgba(69, 68, 68, 0.404)), url(images/herobg.png);
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    justify-content: center;
+    padding: 0 50px;
+    margin-bottom: 20px;
+
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    margin: 5px 0;
+}
+
+.hero h1 span{
+    color: rgb(225, 198, 46);
+}
+
+.hero p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.buttons button{
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: rgb(225, 198, 46);
+    color: black;
+    transform: scale(1.2);
+}
+
+
+
+/* Service section */
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin: 10px 50px;
+}
+
+.service-card img{
+    width: 100%;
+}
+
+.service-card{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.317);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.service .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    margin: 10px 50px;
+}
+
+.service p{
+    margin-bottom: 20px;
+    margin: 10px 50px;
+}
+
+.service .service-card p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.service-card:hover{
+    transform: translateY(-15px);
+}
+
+.service .head a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* why me section  */
+.why-me{
+    margin-top: 20px;
+    background-color: rgb(247, 238, 227);
+    padding: 20px;
+}
+
+.why-me-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.why-me-card{
+    border-left: 1px solid rgb(203, 201, 201);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.why-me-card:first-child{
+    border: none;
+}
+
+.why-me-card p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.why-me p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+
+/* Collection section  */
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+    padding: 20px;
+    background-color: rgb(21, 20, 20);
+    gap: 20px;
+}
+
+.collection-card:first-child{
+    background-image: linear-gradient(rgba(18, 17, 17, 0.687)), url(images/HAIRRR.jpg);
+}
+
+.collection-card:nth-child(2){
+    background-image: linear-gradient(rgba(18, 17, 17, 0.63)), url(images/traning.jpg);
+}
+
+.collection-card:last-child{
+    background-image: linear-gradient(rgba(18, 17, 17, 0.678)), url(images/galary.jpg);
+}
+
+.collection-card:last-child h2{
+    margin-bottom: 25px;
+}
+
+.collection-card{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.collection-card h2{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.collection-card span{
+    font-weight: bold;
+}
+
+.collection-card button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.collection-card button:hover{
+    background-color: rgb(225, 198, 46);
+    color: black;
+    transform: scale(1.2);
+    border: none;
+}
+
+
+
+
+/* Contact section  */
+.contact{
+    display: flex;
+    background-image: linear-gradient(rgba(18, 17, 17, 0.879)), url(images/bg2222.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+
+.contra h2{
+    margin: 15px 0;
+}
+
+.con{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.con i{
+    font-size: 2rem;
+}
+
+.contact p{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.con a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.whatsapp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: green;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.whatsapp i{
+    font-size: 2rem;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.whatsapp:hover{
+    transform: scale(1.1);
+    background-color: rgb(37, 168, 37);
+}
+
+footer p{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-top: 1px solid gray;
+}
+
+
+
+
+/* Responsiveness  */
+
+/*
+   LAPTOP LAYOUT
+   Screens 1025px and above
+ */
+@media screen and (min-width: 1025px) {
+
+    header {
+        padding: 0 30px;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header nav ul {
+        gap: 12px;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    #openbtn {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .why-me-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .collection-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+/*
+   TABLET LAYOUT
+   Screens 768px - 1024px
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+        padding: 10px 25px;
+    }
+
+    header > img {
+        width: 20%;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    #openbtn {
+        display: block;
+    }
+
+    aside {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 320px;
+        max-width: 85vw;
+        height: 100vh;
+        height: 100dvh;
+        overflow-y: auto;
+        z-index: 1000;
+        box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    aside .image {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    aside .image img {
+        width: 150px;
+        height: auto;
+    }
+
+    .hero {
+        padding: 30px;
+        height: auto;
+        min-height: 450px;
+    }
+
+    .hero p br,
+    .why-me-card br {
+        display: none;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        margin: 10px 25px;
+    }
+
+    .service .head,
+    .service > p {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .service .service-card p {
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+
+    .why-me-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .why-me-card:nth-child(3) {
+        border-left: none;
+    }
+
+    .collection-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .collection-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .contact {
+        gap: 30px;
+        padding: 35px 25px;
+        flex-wrap: wrap;
+    }
+
+    .contact p {
+        font-size: 1.1rem;
+    }
+
+    .con {
+        flex-wrap: wrap;
+    }
+}
+
+
+/*
+   PHONE LAYOUT
+   Screens 767px and below
+*/
+@media screen and (max-width: 767px) {
+
+    .wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    header > img {
+        width: 30%;
+        max-width: 130px;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    header .icons {
+        align-items: center;
+        gap: 15px;
+    }
+
+    #openbtn {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .cart {
+        align-items: center;
+        gap: 4px;
+    }
+
+    aside {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        max-width: 85vw;
+        height: 100vh;
+        height: 100dvh;
+        overflow-y: auto;
+        z-index: 1000;
+        box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    aside .image {
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    aside .image img {
+        width: 130px;
+        height: auto;
+    }
+
+    aside .image i {
+        font-size: 1.4rem;
+    }
+
+    aside nav ul li {
+        padding: 12px 5px;
+    }
+
+    aside nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    /* Hero section */
+
+    .hero {
+        padding: 35px 20px;
+        height: auto;
+        min-height: 420px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.8rem, 7vw, 2.4rem);
+    }
+
+    .hero > span {
+        font-size: 0.85rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .hero p br {
+        display: none;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .buttons button {
+        padding: 10px 14px;
+        font-size: 0.75rem;
+    }
+
+    /* Services section */
+
+    .service .head {
+        margin: 20px 15px 10px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .service .head span {
+        font-size: 0.9rem;
+    }
+
+    .service .head a {
+        font-size: 0.85rem;
+    }
+
+    .service > p {
+        margin: 10px 15px 20px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .service > p br {
+        display: none;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        margin: 10px 15px 25px;
+    }
+
+    .service-card {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .service .service-card p {
+        margin: 10px 5px;
+        font-size: 0.95rem;
+    }
+
+    /* Why choose us */
+
+    .why-me {
+        padding: 20px 10px;
+    }
+
+    .why-me > p {
+        margin: 0 5px 15px;
+        font-size: 1.3rem;
+    }
+
+    .why-me-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .why-me-card {
+        padding: 15px 8px;
+        border-left: 1px solid rgb(203, 201, 201);
+        border-top: 1px solid rgb(203, 201, 201);
+    }
+
+    .why-me-card:first-child,
+    .why-me-card:nth-child(3) {
+        border-left: none;
+    }
+
+    .why-me-card p {
+        font-size: 1.05rem;
+    }
+
+    .why-me-card span {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .why-me-card br {
+        display: none;
+    }
+
+    /* Hair, training and gallery */
+
+    .collection-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .collection-card {
+        min-height: 220px;
+        padding: 20px 15px;
+    }
+
+    .collection-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .collection-card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .collection-card p br {
+        display: none;
+    }
+
+    .collection-card button {
+        font-size: 0.8rem;
+    }
+
+    /* Contact section */
+
+    .contact {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .contra h2 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    .contact p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .con {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .con i {
+        font-size: 1.4rem;
+    }
+
+    .con a {
+        overflow-wrap: anywhere;
+    }
+
+    .link {
+        justify-content: flex-start;
+    }
+
+    .whatsapp {
+        justify-content: center;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .whatsapp p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .whatsapp i {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}
