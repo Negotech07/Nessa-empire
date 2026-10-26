@@ -99,6 +99,7 @@ header{
     align-items: center;
     padding:0 50px;
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
+    background-color: white;
 }
 
 header img{
@@ -137,4 +138,139 @@ nav ul li:hover a{
 
 .cart{
     display: flex;
+}
+
+
+
+
+/* hero section  */
+.hero{
+    background-image: linear-gradient(rgba(19, 18, 18, 0.897)), url(images/bg2222.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 50px;
+}
+
+.hero h1{
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.hero span{
+    color: gold;
+}
+
+
+
+/* About nessa  */
+.nessa{
+    display: flex;
+    gap: 30px;
+    padding: 40px 50px;
+}
+
+.nessa .image{
+    flex: 1;
+    background-image: linear-gradient(rgba(41, 40, 38, 0.459)), url(images/nessa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.546);
+    border-radius: 25px;
+}
+
+.nessa .text,
+.vision .text
+{
+    flex: 1.6;
+}
+
+.nessa .text p,
+.vision .text p
+{
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.nessa .text p span,
+.vision .text p span
+{
+    font-weight: bold;
+}
+
+
+
+/* our vision  */
+.vision{
+    display: flex;
+    gap: 30px;
+    padding: 40px 50px;
+    background-color: rgb(232, 232, 232);
+}
+
+.vision .image{
+    flex: 1;
+    background-image: linear-gradient(rgba(41, 40, 38, 0.459)), url(images/ness.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.546);
+    border-radius: 25px;
+    height: 450px;
+}
+
+.vision .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.vision .text p{
+    font-size: 1.3rem;
+}
+
+.vision h2{
+    font-size: 2rem;
+}
+
+
+/* why me section  */
+.why-me{
+    background-color: rgb(247, 238, 227);
+    padding: 40px 50px;
+}
+
+.why-me-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.why-me-card{
+    border-left: 1px solid rgb(203, 201, 201);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.why-me-card:first-child{
+    border: none;
+}
+
+.why-me-card p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.why-me p{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
