@@ -11,3 +11,4 @@ closebtn.addEventListener('click',(e)=>{
     aside.style.display = 'none'
     openbtn.style.display = 'block'
 })
+
