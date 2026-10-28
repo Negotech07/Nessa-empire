@@ -165,3 +165,149 @@ nav ul li:hover a{
     color: gold;
     font-size: 1.4rem;
 }
+
+
+
+/* contact-booking section  */
+.contact-booking{
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+.contact{
+    flex: 1;
+    padding: 40px 10px;
+}
+
+.booking{
+    flex: 1;
+    background: rgb(232, 230, 225);
+    padding:40px 10px;
+    border-radius: 10px;
+}
+
+.booking h3,
+.contact h3
+{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.booking p,
+.contact p
+{
+    margin-bottom: 15px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 15px;
+}
+
+.name,
+.phone,
+.date,
+.time{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.name input,
+.phone input,
+.date input,
+.time input
+{
+    padding: 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.services,
+.message
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.services select
+{
+    padding: 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.message textarea{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button{
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons button:hover{
+    background-color: rgb(225, 198, 46);
+    color: black;
+    transform: scale(1.02);
+}
+
+.container{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 50px;
+    padding: 0 50px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .iconss i{
+    font-size: 2rem;
+    color: white
+}
+
+.card .iconss{
+    background: green;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card .text p{
+    margin-bottom: -0px;
+}
+
+.container button{
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(225, 198, 46);
+    color: black;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-color: hsl(51, 75%, 70%);
+    color: black;
+}
