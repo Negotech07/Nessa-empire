@@ -204,7 +204,7 @@ nav ul li:hover a{
 .booking{
     flex: 1;
     background: rgb(195, 193, 188);
-    padding:40px 10px;
+    padding:40px 20px;
     border-radius: 10px;
 }
 
@@ -294,7 +294,8 @@ nav ul li:hover a{
     flex-direction: column;
 }
 
-.buttons button{
+.buttons button
+{
     padding: 20px;
     border-radius: 10px;
     font-size: 1.4rem;
@@ -338,7 +339,14 @@ nav ul li:hover a{
     margin-bottom: -0px;
 }
 
-.container button{
+.whatsapp-btn{
+    text-decoration: none;
+    font-size: small;
+}
+
+.container button,
+.whatsapp-btn
+{
     height: fit-content;
     width: 30%;
     padding: 10px;
@@ -346,9 +354,12 @@ nav ul li:hover a{
     background-color: rgb(225, 198, 46);
     color: black;
     cursor: pointer;
+    border: none;
 }
 
-.container button:hover{
+.container button:hover,
+.whatsapp-btn:hover
+{
     background-color: hsl(51, 75%, 70%);
     color: black;
 }
@@ -575,9 +586,15 @@ footer p{
         overflow-wrap: anywhere;
     }
 
-    .container button {
+    .container button,
+    .whatsapp-btn
+    {
         width: 100%;
         padding: 12px 8px;
+    }
+
+    .whatsapp-btn{
+        text-align: center;
     }
 
     /* Map */
@@ -839,9 +856,15 @@ footer p{
         line-height: 1.5;
     }
 
-    .container button {
+    .container button,
+    .whatsapp-btn
+    {
         width: 100%;
         padding: 12px;
+    }
+
+    .whatsapp-btn{
+        text-align: center;
     }
 
     /* Responsive Google Map */

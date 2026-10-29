@@ -9,8 +9,6 @@
     margin: 0 auto;
 }
 
-body{
-}
 
 .bg{
     width: 100%;
@@ -413,6 +411,11 @@ nav ul li:hover a{
     background-color: green;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.whatsapp-btn{
+    color: white;
+    text-decoration: none;
 }
 
 .whatsapp i{
