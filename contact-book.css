@@ -9,10 +9,6 @@
     margin: 0 auto;
 }
 
-body{
-    background-color: rgb(217, 232, 244);
-
-}
 
 .bg{
     width: 100%;
@@ -120,7 +116,6 @@ header{
     align-items: center;
     padding:0 50px;
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
-    background-color: white;
 }
 
 header img{
@@ -140,7 +135,6 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     color: black;
-    font-size: 1.3rem;
 }
 
 header .icons{
@@ -160,6 +154,11 @@ nav ul li:hover a{
 .cart{
     display: flex;
 }
+
+#openbtn{
+    display: none;
+}
+
 
 
 
