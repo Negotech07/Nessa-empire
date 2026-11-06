@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,308 +12,320 @@
 </head>
 
 <body>
-<div class="wrap">
+    <div class="wrap">
 
-    <div class="bg"></div>
+        <div class="bg"></div>
 
-    <!-- Aside Navigation -->
-    <aside id="aside" class="slideIn">
-        <div class="image">
+        <!-- Aside Navigation -->
+        <aside id="aside" class="slideIn">
+            <div class="image">
+                <img src="images/Gemini_Generated_Image_i3shf2i3shf2i3sh.jfif" alt="Nessa's Empire Logo">
+                <i class="fa-solid fa-x" id="closebtn"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services & Gallery</a></li>
+                    <li><a href="Traning.html">Training</a></li>
+                    <li><a href="hair.html">Hair</a></li>
+                    <li><a href="contack-book.html">Contact Us / Book Appointment</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Header -->
+        <header>
             <img src="images/Gemini_Generated_Image_i3shf2i3shf2i3sh.jfif" alt="Nessa's Empire Logo">
-            <i class="fa-solid fa-x" id="closebtn"></i>
-        </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="service.html">Services & Gallery</a></li>
-                <li><a href="Traning.html">Training</a></li>
-                <li><a href="hair.html">Hair</a></li>
-                <li><a href="contack-book.html">Contact Us / Book Appointment</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-            </ul>
-        </nav>
-    </aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services & Gallery</a></li>
+                    <li><a href="Traning.html">Training</a></li>
+                    <li><a href="hair.html">Hair</a></li>
+                    <li><a href="contack-book.html">Contact Us / Book Appointment</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
 
-    <!-- Header -->
-    <header>
-        <img src="images/Gemini_Generated_Image_i3shf2i3shf2i3sh.jfif" alt="Nessa's Empire Logo">
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars" id="openbtn"></i>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="service.html">Services & Gallery</a></li>
-                <li><a href="Traning.html">Training</a></li>
-                <li><a href="hair.html">Hair</a></li>
-                <li><a href="contack-book.html">Contact Us / Book Appointment</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-            </ul>
-        </nav>
-
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bars" id="openbtn"></i>
-
-            <div class="cart" id="cartIcon">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p id="cartCount">0</p>
+                <div class="cart" id="cartIcon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p id="cartCount">0</p>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
+        <main>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Our Hair <em>Collection</em></h1>
-                <p>Premium quality hair for that flawless and confident look.</p>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Our Hair <em>Collection</em></h1>
+                    <p>Premium quality hair for that flawless and confident look.</p>
+                </div>
+            </section>
+
+            <!-- Shop Section -->
+            <section class="shop">
+
+                <div class="shop-heading">
+                    <div class="shop-title">
+                        <h2>Shop Our <span>Hair</span></h2>
+                        <p>Choose from our premium hair collection below.</p>
+                    </div>
+
+                    <div class="shop-controls">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" id="searchHair" placeholder="Search for hair...">
+                        </div>
+
+                        <select id="sortHair">
+                            <option value="featured">Sort by: Featured</option>
+                            <option value="name">Sort by: Name</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="productGrid">
+
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Bounce-Unit.jpg" alt="Bounce Unit">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bounce Unit</h3>
+                            <p class="product-description">Premium Bounce Unit</p>
+                            <button class="add-cart" data-product="Bounce Unit">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Braided Wig.jpg" alt="Braided Wig">
+                        </div>
+                        <div class="product-details">
+                            <h3>Braided Wig</h3>
+                            <p class="product-description">Beautiful soft Braided Wig</p>
+                            <button class="add-cart" data-product="Braided Wig">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Pixel Curls.jpg" alt="">
+                        </div>
+                        <div class="product-details">
+                            <h3>Pixel Curls</h3>
+                            <p class="product-description">Full and defined Pixel Curls</p>
+                            <button class="add-cart" data-product="Pixel Curls">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Bone Straight.jpg" alt="Bone Straight">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bone Straight</h3>
+                            <p class="product-description">Natural-looking Bone Straight</p>
+                            <button class="add-cart" data-product="Bone Straight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Bone straight 2.jpg" alt="Bone Straight">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bone Straight</h3>
+                            <p class="product-description">Beautiful Bone Straight</p>
+                            <button class="add-cart" data-product="Bone Straight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Bone straight 3.jpg" alt="Bone Straight">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bone Straight</h3>
+                            <p class="product-description">Soft and elegant Bone Straight</p>
+                            <button class="add-cart" data-product="Bone Straight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/HAIRRR.jpg" alt="Bounce Unit">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bounce Unit</h3>
+                            <p class="product-description">Stylish Bounce Unit</p>
+                            <button class="add-cart" data-product="Bounce Unit">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Bone Straight 4.jpg" alt="Bone Straight">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bone Straight</h3>
+                            <p class="product-description">Luxurious Bone Straight</p>
+                            <button class="add-cart" data-product="Bone Straight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/bounce Unit 3.jpg" alt="Bounce Unit">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bounce Unit</h3>
+                            <p class="product-description">Stylish Bounce Unit</p>
+                            <button class="add-cart" data-product="Bounce Unit">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Bone Straight 6.jpg" alt="Bone Straight">
+                        </div>
+                        <div class="product-details">
+                            <h3>Bone Straight</h3>
+                            <p class="product-description">Stylish Bone Straight</p>
+                            <button class="add-cart" data-product="Bone Straight">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p id="noResults">No hair products found.</p>
+
+            </section>
+
+            <!-- Benefits Section -->
+            <section class="benefits">
+
+                <div class="benefit">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <p><strong>Premium Quality</strong><br>Guaranteed</p>
+                </div>
+
+                <div class="benefit">
+                    <i class="fa-solid fa-headset"></i>
+                    <p><strong>Customer Support</strong><br>Always Available</p>
+                </div>
+
+                <div class="benefit">
+                    <i class="fa-regular fa-heart"></i>
+                    <p><strong>Look Good,</strong><br>Feel Great</p>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Cart Panel -->
+        <section class="cart-panel" id="cartPanel">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <i class="fa-solid fa-xmark" id="closeCart"></i>
             </div>
+
+            <div id="cartItems">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Order on WhatsApp
+            </button>
+
         </section>
 
-        <!-- Shop Section -->
-        <section class="shop">
+        <!-- Checkout Form -->
+        <section class="checkout" id="checkout">
 
-            <div class="shop-heading">
-                <div class="shop-title">
-                    <h2>Shop Our <span>Hair</span></h2>
-                    <p>Choose from our premium hair collection below.</p>
-                </div>
+            <div class="checkout-box">
 
-                <div class="shop-controls">
-                    <div class="search-box">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" id="searchHair" placeholder="Search for hair...">
-                    </div>
+                <i class="fa-solid fa-xmark" id="closeCheckout"></i>
 
-                    <select id="sortHair">
-                        <option value="featured">Sort by: Featured</option>
-                        <option value="name">Sort by: Name</option>
-                    </select>
-                </div>
-            </div>
+                <h2>Complete Your Order</h2>
+                <p>Enter your details to send your hair order enquiry.</p>
 
-            <!-- Product Grid -->
-            <div class="product-grid" id="productGrid">
+                <form id="checkoutForm">
 
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Bounce-Unit.jpg" alt="Bounce Unit">
-                    </div>
-                    <div class="product-details">
-                        <h3>Bounce Unit</h3>
-                        <p class="product-description">Premium Bounce Unit</p>
-                        <button class="add-cart" data-product="Bounce Unit">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" required placeholder="Enter your name">
 
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Braided Wig.jpg" alt="Braided Wig">
-                    </div>
-                    <div class="product-details">
-                        <h3>Braided Wig</h3>
-                        <p class="product-description">Beautiful soft Braided Wig</p>
-                        <button class="add-cart" data-product="Braided Wig">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
 
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <!-- ADD YOUR HAIR IMAGE HERE -->
-                    </div>
-                    <div class="product-details">
-                        <h3>Deep Wave Bundle</h3>
-                        <p class="product-description">Full and defined deep waves</p>
-                        <button class="add-cart" data-product="Deep Wave Bundle">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
+                    <button type="submit">Send Order on WhatsApp</button>
 
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <!-- ADD YOUR HAIR IMAGE HERE -->
-                    </div>
-                    <div class="product-details">
-                        <h3>Curly Bundle</h3>
-                        <p class="product-description">Natural-looking curly texture</p>
-                        <button class="add-cart" data-product="Curly Bundle">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
+                </form>
 
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <!-- ADD YOUR HAIR IMAGE HERE -->
-                    </div>
-                    <div class="product-details">
-                        <h3>Kinky Curly Bundle</h3>
-                        <p class="product-description">Beautiful kinky curly texture</p>
-                        <button class="add-cart" data-product="Kinky Curly Bundle">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <!-- ADD YOUR HAIR IMAGE HERE -->
-                    </div>
-                    <div class="product-details">
-                        <h3>Water Wave Bundle</h3>
-                        <p class="product-description">Soft and elegant water waves</p>
-                        <button class="add-cart" data-product="Water Wave Bundle">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product 7 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <!-- ADD YOUR HAIR IMAGE HERE -->
-                    </div>
-                    <div class="product-details">
-                        <h3>13x4 Lace Frontal Wig (Bob)</h3>
-                        <p class="product-description">Stylish bob lace frontal wig</p>
-                        <button class="add-cart" data-product="13x4 Lace Frontal Wig (Bob)">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Product 8 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <!-- ADD YOUR HAIR IMAGE HERE -->
-                    </div>
-                    <div class="product-details">
-                        <h3>13x4 Lace Frontal Wig (Curly)</h3>
-                        <p class="product-description">Full curly lace frontal wig</p>
-                        <button class="add-cart" data-product="13x4 Lace Frontal Wig (Curly)">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-
-            <p id="noResults">No hair products found.</p>
-
-        </section>
-
-        <!-- Benefits Section -->
-        <section class="benefits">
-
-            <div class="benefit">
-                <i class="fa-solid fa-shield-halved"></i>
-                <p><strong>Premium Quality</strong><br>Guaranteed</p>
-            </div>
-
-            <div class="benefit">
-                <i class="fa-solid fa-truck-fast"></i>
-                <p><strong>Fast & Reliable</strong><br>Delivery</p>
-            </div>
-
-            <div class="benefit">
-                <i class="fa-solid fa-headset"></i>
-                <p><strong>Customer Support</strong><br>Always Available</p>
-            </div>
-
-            <div class="benefit">
-                <i class="fa-regular fa-heart"></i>
-                <p><strong>Look Good,</strong><br>Feel Great</p>
             </div>
 
         </section>
 
-    </main>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Nessa's Empire. All right Reserved.</p>
+        </footer>
 
-    <!-- Cart Panel -->
-    <section class="cart-panel" id="cartPanel">
+    </div>
 
-        <div class="cart-header">
-            <h2>Your Cart</h2>
-            <i class="fa-solid fa-xmark" id="closeCart"></i>
-        </div>
-
-        <div id="cartItems">
-            <p class="empty-cart">Your cart is empty.</p>
-        </div>
-
-        <button id="checkoutBtn" class="checkout-btn">
-            Order on WhatsApp
-        </button>
-
-    </section>
-
-    <!-- Checkout Form -->
-    <section class="checkout" id="checkout">
-
-        <div class="checkout-box">
-
-            <i class="fa-solid fa-xmark" id="closeCheckout"></i>
-
-            <h2>Complete Your Order</h2>
-            <p>Enter your details to send your hair order enquiry.</p>
-
-            <form id="checkoutForm">
-
-                <label for="customerName">Full Name</label>
-                <input type="text" id="customerName" required placeholder="Enter your name">
-
-                <label for="customerPhone">Phone Number</label>
-                <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
-
-                <button type="submit">Send Order on WhatsApp</button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-logo">
-            <img src="images/Gemini_Generated_Image_i3shf2i3shf2i3sh.jfif" alt="Nessa's Empire Logo">
-        </div>
-
-        <div class="footer-socials">
-            <a href="https://www.instagram.com/hairstyle_in_ugbowo_benin/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="https://wa.me/2347031137848" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-        </div>
-
-        <p>Nessa's Empire — Your Beauty, Your Confidence, Your Style ♡</p>
-    </footer>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
