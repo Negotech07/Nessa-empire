@@ -48,12 +48,55 @@
             <div class="icons">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-bars" id="openbtn"></i>
-                <div class="cart">
+                <div class="cart" id="cartIcon">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <p>0</p>
+                    <p id="cartCount">0</p>
                 </div>
             </div>
         </header>
+
+        <!-- SHOPPING CART -->
+        <div class="cart-panel" id="cartPanel">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <i class="fa-solid fa-xmark" id="closeCart"></i>
+            </div>
+
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">
+            Order on WhatsApp
+        </button>
+
+        </div>
+
+        <!-- CHECKOUT FORM -->
+        <div class="checkout" id="checkout">
+
+            <div class="checkout-content">
+
+                <i class="fa-solid fa-xmark" id="closeCheckout"></i>
+
+                <h2>Complete Your Order</h2>
+                <p>Enter your details to continue to WhatsApp.</p>
+
+                <form id="checkoutForm">
+
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" placeholder="Enter your full name" required>
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" placeholder="Enter your phone number" required>
+
+                    <button type="submit">Send Order on WhatsApp</button>
+
+                </form>
+
+            </div>
+
+        </div>
 
         <main>
             <section class="hero">
@@ -228,6 +271,7 @@
     </div>
 
     <script src="contact-book.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

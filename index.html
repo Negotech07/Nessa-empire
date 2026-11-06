@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +13,7 @@
 
 <body>
     <div class="wrap">
-        <div class="bg">
-        </div>
+        <div class="bg"></div>
 
         <aside id="aside" class="slideIn">
             <div class="image">
@@ -50,12 +50,57 @@
             <div class="icons">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-bars" id="openbtn"></i>
-                <div class="cart">
+
+                <div class="cart" id="cartIcon">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <p>0</p>
+                    <p id="cartCount">0</p>
                 </div>
             </div>
         </header>
+
+        <!-- Cart Panel -->
+    <section class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <i class="fa-solid fa-xmark" id="closeCart"></i>
+        </div>
+
+        <div id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <button id="checkoutBtn" class="checkout-btn">
+            Order on WhatsApp
+        </button>
+
+    </section>
+
+    <!-- Checkout Form -->
+    <section class="checkout" id="checkout">
+
+        <div class="checkout-box">
+
+            <i class="fa-solid fa-xmark" id="closeCheckout"></i>
+
+            <h2>Complete Your Order</h2>
+            <p>Enter your details to send your hair order enquiry.</p>
+
+            <form id="checkoutForm">
+
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName" required placeholder="Enter your name">
+
+                <label for="customerPhone">Phone Number</label>
+                <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
+
+                <button type="submit">Send Order on WhatsApp</button>
+
+            </form>
+
+        </div>
+
+    </section>
 
         <main>
             <section class="hero">
@@ -71,7 +116,7 @@
 
                 <div class="buttons">
                     <button>BOOK AN APPOINTMENT</button>
-                    <button>SHOP HAIR</button>
+                    <button onclick="window.location.href='hair.html'">SHOP HAIR</button>
                 </div>
             </section>
 
@@ -142,21 +187,21 @@
                         <span>OUR HAIR COLLECTION.</span>
                         <h2>Find Hair You'll Love.</h2>
                         <p>Premium quality hair, wigs and accessories <br> for every style and occasion.</p>
-                        <button>SHOP HAIR</button>
+                        <button onclick="window.location.href='hair.html'">SHOP HAIR</button>
                     </div>
 
                     <div class="collection-card">
                         <span>BEAUTY ACADEMY.</span>
                         <h2>Learn. Create. Earn.</h2>
                         <p>Training avaliable in Hair, Pedicure <br> Semi-Permanent Brows, Tattoo and Lash-Extension</p>
-                        <button>VIEW TRAINING</button>
+                        <button onclick="window.location.href='Traning.html'">VIEW TRAINING</button>
                     </div>
 
                     <div class="collection-card">
                         <span>SEE OUR WORK .</span>
                         <h2>Beauty Looks Better <br> When You Can See It.</h2>
 
-                        <button>VIEW GALLERY</button>
+                        <button onclick="window.location.href='service.html'">VIEW GALLERY</button>
                     </div>
                 </div>
             </section>
