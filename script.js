@@ -590,3 +590,8 @@ window.addEventListener("storage", function(event) {
 
 // This loads the saved cart whenever either page opens.
 updateCart();
+
+const year = new Date().getFullYear();
+// console.log(year);
+let mydate = document.querySelector('.dates')
+mydate.innerHTML = year

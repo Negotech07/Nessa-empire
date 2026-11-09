@@ -46,14 +46,56 @@
             </nav>
 
             <div class="icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-bars" id="openbtn"></i>
-                <div class="cart">
+                 <div class="cart" id="cartIcon">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <p>0</p>
+                    <p id="cartCount">0</p>
                 </div>
             </div>
         </header>
+
+        <section class="cart-panel" id="cartPanel">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <i class="fa-solid fa-xmark" id="closeCart"></i>
+            </div>
+
+            <div id="cartItems">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Order on WhatsApp
+            </button>
+
+        </section>
+
+        <!-- Checkout Form -->
+        <section class="checkout" id="checkout">
+
+            <div class="checkout-box">
+
+                <i class="fa-solid fa-xmark" id="closeCheckout"></i>
+
+                <h2>Complete Your Order</h2>
+                <p>Enter your details to send your hair order enquiry.</p>
+
+                <form id="checkoutForm">
+
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" required placeholder="Enter your name">
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
+
+                    <button type="submit">Send Order on WhatsApp</button>
+
+                </form>
+
+            </div>
+
+        </section>
 
         <main>
             <section class="hero">
@@ -142,7 +184,7 @@
                             Chat on WhatsApp
                         </a>
 
-                        <a href="#" class="instagram-btn">
+                        <a href="https://www.instagram.com/hairstylist_in_ugbowo_benin?rpxt=MWN0aHIyZGJyZW43bg%3D%3D&utm_source=qr" class="instagram-btn">
                             <i class="fa-brands fa-instagram"></i>
                             Visit Instagram
                         </a>
@@ -155,11 +197,12 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Nessa's Empire. All right Reserved.</p>
+            <p>&copy; <span class="dates"> </span> &nbsp; Nessa's Empire. All right Reserved.</p>
         </footer>
 
     </div>
     <script src="Traning.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

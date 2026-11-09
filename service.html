@@ -24,7 +24,7 @@
             </div>
 
             <nav>
-                <ul>
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="service.html">Services & Gallery</a></li>
                     <li><a href="Traning.html">Training</a></li>
@@ -50,15 +50,58 @@
             </nav>
 
             <div class="icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-bars" id="openbtn"></i>
 
-                <div class="cart">
+              <div class="cart" id="cartIcon">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <p>0</p>
+                    <p id="cartCount">0</p>
                 </div>
             </div>
         </header>
+
+        <section class="cart-panel" id="cartPanel">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <i class="fa-solid fa-xmark" id="closeCart"></i>
+            </div>
+
+            <div id="cartItems">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Order on WhatsApp
+            </button>
+
+        </section>
+
+        <!-- Checkout Form -->
+        <section class="checkout" id="checkout">
+
+            <div class="checkout-box">
+
+                <i class="fa-solid fa-xmark" id="closeCheckout"></i>
+
+                <h2>Complete Your Order</h2>
+                <p>Enter your details to send your hair order enquiry.</p>
+
+                <form id="checkoutForm">
+
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" required placeholder="Enter your name">
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
+
+                    <button type="submit">Send Order on WhatsApp</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
 
         <main>
 
@@ -274,12 +317,13 @@
 
         <!-- FOOTER -->
         <footer>
-            <p>&copy; 2026 Nessa's Empire. All right Reserved.</p>
+            <p>&copy; <span class="dates"></span> Nessa's Empire. All right Reserved.</p>
         </footer>
 
     </div>
 
     <script src="service.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

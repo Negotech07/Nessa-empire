@@ -116,6 +116,8 @@ header{
     align-items: center;
     padding:0 50px;
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
+    position: fixed;
+    background-color: white;
 }
 
 header img{
@@ -167,10 +169,12 @@ nav ul li:hover a{
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 500px;
+    /* height: 700px; */
+    z-index: 1000;
     justify-content: center;
-    padding: 0 50px;
+    padding: 200px 50px 50px 50px;
     margin-bottom: 20px;
+    /* padding: ; */
 
 }
 
@@ -228,7 +232,6 @@ nav ul li:hover a{
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -238,6 +241,11 @@ nav ul li:hover a{
     align-items: center;
     margin: 5px 0;
     margin: 10px 50px;
+}
+
+.discover{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .service p{
@@ -251,14 +259,19 @@ nav ul li:hover a{
     font-size: 1.3rem;
 }
 
-.service-card:hover{
-    transform: translateY(-15px);
-}
 
 .service .head a{
     color: black;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.service .head a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: rgb(83, 83, 186);
 }
 
 
@@ -267,6 +280,12 @@ nav ul li:hover a{
     margin-top: 20px;
     background-color: rgb(247, 238, 227);
     padding: 20px;
+    text-align: center;
+}
+
+.why{
+    /* font-size: 12rem; */
+    /* background-color: red;  */
 }
 
 .why-me-container{
@@ -420,6 +439,16 @@ nav ul li:hover a{
 
 .whatsapp i{
     font-size: 2rem;
+}
+
+.insta{
+    transition: 0.5s;
+}
+
+.insta:hover{
+    text-decoration: underline;
+    color: pink;
+    transform: scale(1.1);
 }
 
 .link{
@@ -777,7 +806,7 @@ footer p{
     }
 
     .hero {
-        padding: 30px;
+        padding: 150px 40px 50px 40px;
         height: auto;
         min-height: 450px;
     }
@@ -850,6 +879,7 @@ footer p{
     header {
         padding: 10px 15px;
         gap: 10px;
+        width: 100%;
     }
 
     header > img {
@@ -918,7 +948,7 @@ footer p{
     /* Hero section */
 
     .hero {
-        padding: 35px 20px;
+        padding: 120px 20px 50px 20px;
         height: auto;
         min-height: 420px;
         background-position: center;
@@ -960,11 +990,11 @@ footer p{
     }
 
     .service .head span {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
     .service .head a {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .service > p {
