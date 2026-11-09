@@ -566,15 +566,27 @@ footer p{
     cursor: pointer;
 }
 
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #079b48;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+}
 
-/* CHECKOUT */
-
+/* ================================
+   CHECKOUT
+================================ */
 .checkout {
+    display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.65);
     z-index: 3000;
-    display: none;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -584,28 +596,32 @@ footer p{
     display: flex;
 }
 
-.checkout-content {
-    background: white;
+.checkout-box {
     width: 450px;
     max-width: 100%;
+    background: white;
+    border-radius: 20px;
     padding: 30px;
-    border-radius: 12px;
     position: relative;
 }
 
-.checkout-content #closeCheckout {
+#closeCheckout {
     position: absolute;
-    top: 15px;
     right: 20px;
+    top: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
-.checkout-content h2 {
+.checkout-box h2 {
+    font-family: Georgia, serif;
     margin-bottom: 10px;
 }
 
-.checkout-content p {
+.checkout-box>p {
+    color: #777;
+    line-height: 1.5;
     margin-bottom: 20px;
-    color: #555;
 }
 
 #checkoutForm {
@@ -621,25 +637,9 @@ footer p{
 #checkoutForm input {
     width: 100%;
     padding: 13px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-}
-
-#checkoutForm input:focus {
-    border-color: goldenrod;
-}
-
-.checkout-btn {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 30px;
-    background: #079b48;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #checkoutForm button {
@@ -650,6 +650,44 @@ footer p{
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h4 {
+    margin: 0 0 6px;
+}
+
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    visibility: hidden;
+    transition: right 0.4s ease, visibility 0.4s ease;
+    z-index: 1000;
+}
+
+.cart-panel.active {
+    right: 0;
+    visibility: visible;
 }
 
 /* CART RESPONSIVENESS */

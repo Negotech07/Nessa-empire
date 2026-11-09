@@ -55,40 +55,40 @@
             </div>
         </header>
 
-        <!-- SHOPPING CART -->
-        <div class="cart-panel" id="cartPanel">
+        <section class="cart-panel" id="cartPanel">
 
             <div class="cart-header">
                 <h2>Your Cart</h2>
                 <i class="fa-solid fa-xmark" id="closeCart"></i>
             </div>
 
-            <div class="cart-items" id="cartItems">
+            <div id="cartItems">
                 <p class="empty-cart">Your cart is empty.</p>
             </div>
+
             <button id="checkoutBtn" class="checkout-btn">
-            Order on WhatsApp
-        </button>
+                Order on WhatsApp
+            </button>
 
-        </div>
+        </section>
 
-        <!-- CHECKOUT FORM -->
-        <div class="checkout" id="checkout">
+        <!-- Checkout Form -->
+        <section class="checkout" id="checkout">
 
-            <div class="checkout-content">
+            <div class="checkout-box">
 
                 <i class="fa-solid fa-xmark" id="closeCheckout"></i>
 
                 <h2>Complete Your Order</h2>
-                <p>Enter your details to continue to WhatsApp.</p>
+                <p>Enter your details to send your hair order enquiry.</p>
 
                 <form id="checkoutForm">
 
                     <label for="customerName">Full Name</label>
-                    <input type="text" id="customerName" placeholder="Enter your full name" required>
+                    <input type="text" id="customerName" required placeholder="Enter your name">
 
                     <label for="customerPhone">Phone Number</label>
-                    <input type="tel" id="customerPhone" placeholder="Enter your phone number" required>
+                    <input type="tel" id="customerPhone" required placeholder="Enter your phone number">
 
                     <button type="submit">Send Order on WhatsApp</button>
 
@@ -96,7 +96,8 @@
 
             </div>
 
-        </div>
+        </section>
+
 
         <main>
             <section class="hero">
@@ -108,33 +109,33 @@
                 <div class="booking">
                     <h3>Book an Appointment</h3>
                     <p>Fill our the form below and we'll get back to you <br> as soon as possible.</p>
-                    <form>
+                    <form id="bookingForm">
                         <div class="info">
                             <div class="name">
                                 <label for="Fullname">Full Name</label>
-                                <input type="text" placeholder="Enter your full name">
+                                <input type="text" id="bookingName" placeholder="Enter your full name" required>
                             </div>
 
                             <div class="phone">
                                 <label for="number">Phone Number</label>
-                                <input type="tel" placeholder="e.g 08123456789">
+                                <input type="tel" id="bookingPhone" placeholder="e.g 08123456789" required>
                             </div>
 
                             <div class="date">
                                 <label for="date">Preferred Date</label>
-                                <input type="date">
+                                <input type="date" id="bookingDate" required>
                             </div>
 
                             <div class="time">
                                 <label for="time">Preferred Time</label>
-                                <input type="time">
+                                <input type="time" id="bookingTime" required>
                             </div>
                         </div>
 
                         <div class="services">
                             <label for="services">Services Interested In</label>
 
-                            <select name="services" id="services" required>
+                            <select name="services" id="services" id="services" required>
                                 <option value="" disabled selected>Select Sevice</option>
                                 <option value="hair">Hair</option>
                                 <option value="wigging">Wigging</option>
@@ -155,7 +156,8 @@
 
                         <div class="message">
                             <label for="">Additional Message</label>
-                            <textarea rows="10" placeholder="Tell us anything we should know..."></textarea>
+                            <textarea id="bookingMessage" rows="10"
+                                placeholder="Tell us anything we should know..."></textarea>
                         </div>
 
                         <div class="buttons">
@@ -195,10 +197,13 @@
                                 <div class="text">
                                     <h4>Phone</h4>
                                     <p>Call us directly</p>
-                                    <span>+234 703 113 7848</span>
+                                    <span>09025404091</span> <br>
+                                    <span>09136073510</span>
                                 </div>
                             </div>
-                            <button>Call Now</button>
+                            <a href="tel:+2347031137848" class="whatsapp-btn">
+                                Call Now
+                            </a>
                         </div>
 
                         <div class="container">
@@ -216,10 +221,13 @@
                                 <div class="text">
                                     <h4>Instagram</h4>
                                     <p>Follow us for updates</p>
-                                    <span>@hairstyle_in_ <br>ugbowo_benin</span>
+                                    <span>@hairstylist_in_ <br>ugbowo_benin</span>
                                 </div>
                             </div>
-                            <button>View Instagram</button>
+                            <a href="https://www.instagram.com/hairstylist_in_ugbowo_benin?rpxt=MWN0aHIyZGJyZW43bg%3D%3D&utm_source=qr"
+                                target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                                View on Instagram
+                            </a>
                         </div>
 
                         <div class="container">
@@ -265,7 +273,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Nessa's Empire. All right Reserved.</p>
+            <p>&copy; <span class="dates"></span> Nessa's Empire. All right Reserved.</p>
         </footer>
 
     </div>

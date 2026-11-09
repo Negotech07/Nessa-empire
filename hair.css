@@ -120,6 +120,9 @@ header{
     padding:0 50px;
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
     background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 header > img {
@@ -169,7 +172,7 @@ header .icons {
    HERO
 ================================ */
 .hero {
-    min-height: 320px;
+    /* min-height: 320px; */
     background:
         linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.25)),
         url("images/galary.jpg");
@@ -177,13 +180,11 @@ header .icons {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 45px 5.5%;
+    padding: 220px 50px 120px;
     color: white;
-
     border-bottom-left-radius: 100px 60px;
     border-bottom-right-radius: 100px 10px;
 }
@@ -710,7 +711,7 @@ footer p{
 
     .hero {
         min-height: 300px;
-        padding: 35px 5%;
+        padding: 200px 40px 100px;
     }
 
     .hero h1 {
@@ -854,7 +855,7 @@ footer p{
 
     .hero {
         min-height: 240px;
-        padding: 25px 20px;
+        padding: 120px 20px 50px;
         border-bottom-left-radius: 45px 30px;
         border-bottom-right-radius: 45px 10px;
     }
@@ -969,21 +970,6 @@ footer p{
         font-size: 0.9rem;
     }
 
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 25px 15px;
-        gap: 20px;
-    }
-
-    .footer-logo img {
-        width: 120px;
-    }
-
-    footer > p {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
 
     .cart-panel {
         width: 100%;
