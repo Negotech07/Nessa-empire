@@ -116,6 +116,8 @@ header{
     align-items: center;
     padding:0 50px;
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
+    position: fixed;
+    background-color: white;
 }
 
 header img{
@@ -173,7 +175,8 @@ nav ul li:hover a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 50px;
+    padding: 250px 50px 140px;
+    z-index: 999;
 }
 
 .hero h1{
@@ -722,7 +725,7 @@ footer p{
 
     /* Navigation */
     header {
-        padding: 10px 25px;
+        width: 100%;
     }
 
     header img {
@@ -775,7 +778,7 @@ footer p{
     /* Hero */
     .hero {
         height: 260px;
-        padding: 30px;
+        padding: 200px 30px 150px;
     }
 
     .hero h1 {
@@ -930,6 +933,7 @@ footer p{
     header {
         padding: 10px 15px;
         gap: 10px;
+        width: 100%;
     }
 
     header img {
@@ -997,7 +1001,7 @@ footer p{
     /* Hero */
     .hero {
         height: 210px;
-        padding: 25px 20px;
+        padding: 150px 20px 100px;
     }
 
     .hero h1 {

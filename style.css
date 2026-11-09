@@ -805,6 +805,10 @@ footer p{
         height: auto;
     }
 
+    aside nav ul li a{
+        font-size: 1.2rem;
+    }
+
     .hero {
         padding: 150px 40px 50px 40px;
         height: auto;

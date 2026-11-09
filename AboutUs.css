@@ -116,6 +116,8 @@ header{
     padding:0 50px;
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
     background-color: white;
+    position: fixed;
+    z-index: 999;
 }
 
 header img{
@@ -170,7 +172,7 @@ nav ul li:hover a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 50px;
+    padding: 240px 50px 170px;
 }
 
 .hero h1{
@@ -661,7 +663,7 @@ footer p{
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     header {
-        padding: 10px 25px;
+        padding: px 25px;
     }
 
     header > img {
@@ -696,6 +698,10 @@ footer p{
         justify-content: space-between;
     }
 
+    aside nav ul li a{
+        font-size: 1.2rem;
+    }
+
     aside .image img {
         width: 150px;
     }
@@ -703,7 +709,7 @@ footer p{
     /* Hero */
     .hero {
         height: 280px;
-        padding: 35px;
+        padding: 200px 35px 170px;
     }
 
     .hero h1 {
@@ -847,8 +853,9 @@ footer p{
     }
 
     header {
-        padding: 10px 15px;
+        padding: 6px 15px;
         gap: 10px;
+        width: 100%;
     }
 
     header > img {
@@ -908,11 +915,15 @@ footer p{
         font-size: 1.1rem;
     }
 
+    .bg{
+        height: 100%;
+    }
+
     /* Hero */
     .hero {
         height: auto;
         min-height: 240px;
-        padding: 35px 20px;
+        padding: 130px 20px 70px;
     }
 
     .hero h1 {
