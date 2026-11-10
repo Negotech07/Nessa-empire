@@ -126,6 +126,7 @@ header {
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
     background-color: white;
     position: fixed;
+    max-width: 1300px;
 }
 
 header img {

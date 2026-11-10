@@ -118,6 +118,7 @@ header{
     box-shadow: 0 10px 20px rgba(68, 67, 67, 0.15);
     position: fixed;
     background-color: white;
+    max-width: 1300px;
 }
 
 header img{
@@ -281,11 +282,6 @@ nav ul li:hover a{
     background-color: rgb(247, 238, 227);
     padding: 20px;
     text-align: center;
-}
-
-.why{
-    /* font-size: 12rem; */
-    /* background-color: red;  */
 }
 
 .why-me-container{

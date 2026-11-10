@@ -82,6 +82,7 @@ const checkoutForm = document.getElementById("checkoutForm");
 
 const customerName = document.getElementById("customerName");
 const customerPhone = document.getElementById("customerPhone");
+const customerMessage = document.getElementById('customerMessage')
 
 
 /* =========================================
@@ -450,6 +451,7 @@ if (checkoutForm) {
 
         const name = customerName.value.trim();
         const phone = customerPhone.value.trim();
+        const Customer = customerMessage.value.trim()
 
         if (!name || !phone) {
             alert("Please enter your name and phone number.");
@@ -462,6 +464,7 @@ if (checkoutForm) {
         message += "CUSTOMER DETAILS\n";
         message += "Name: " + name + "\n";
         message += "Phone: " + phone + "\n\n";
+        message += "Addtional Information: " + Customer + "\n\n\n"
 
         message += "ORDER DETAILS\n";
 
